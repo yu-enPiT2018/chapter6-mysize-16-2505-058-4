@@ -6,13 +6,125 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <EditText
+        android:id="@+id/inseam"
+        android:layout_width="70"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="股下"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toStartOf="@+id/sleeve"
+        app:layout_constraintStart_toStartOf="@+id/droidlmage"
+        app:layout_constraintTop_toBottomOf="@+id/droidlmage" />
+
+    <EditText
+        android:id="@+id/inseam2"
+        android:layout_width="70"
+        android:layout_height="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="股下"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toStartOf="@+id/sleeve"
+        app:layout_constraintStart_toStartOf="@+id/droidlmage"
+        app:layout_constraintTop_toBottomOf="@+id/droidlmage" />
+
+    <EditText
+        android:id="@+id/waist"
+        android:layout_width="70"
+        android:layout_height="53dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="胴回り"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/droidlmage"
+        app:layout_constraintEnd_toStartOf="@+id/droidlmage" />
+
+    <EditText
+        android:id="@+id/sleeve"
+        android:layout_width="70"
+        android:layout_height="53dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="裄丈"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/droidlmage"
+        app:layout_constraintTop_toTopOf="@+id/droidlmage"
+        app:layout_constraintVertical_bias="0.496"
+        tools:layout_editor_absoluteX="277dp" />
+
+    <ImageView
+        android:id="@+id/droidlmage"
+        android:layout_width="170"
+        android:layout_height="200"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/ic_mysize" />
+
+    <EditText
+        android:id="@+id/neck"
+        android:layout_width="70"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="首回り"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintEnd_toStartOf="@+id/droidlmage"
+        app:layout_constraintTop_toTopOf="@+id/droidlmage" />
+
+    <Button
+        android:id="@+id/save"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginEnd="148dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginStart="8dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="425dp"
+        tools:text="保存" />
+
+    <ImageButton
+        android:id="@+id/heightButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_height" />
 
 </android.support.constraint.ConstraintLayout>
